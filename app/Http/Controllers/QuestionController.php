@@ -24,4 +24,6 @@ class QuestionController extends Controller
 
         return redirect('/questionnaires/'.$questionnaire->id);
     }
+
+
 }
