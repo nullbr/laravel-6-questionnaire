@@ -25,3 +25,6 @@ Route::get('/questionnaires/{questionnaire}', 'QuestionnaireController@show')->n
 
 Route::get('/questionnaires/{questionnaire}/questions/create', 'QuestionController@create')->name('createQuestion');
 Route::post('/questionnaires/{questionnaire}/questions', 'QuestionController@store')->name('storeQuestion');
+
+Route::get('/surveys/{questionnaire}-{title}', 'SurveyController@show')->name('takeSurvey');
+Route::post('/surveys/{questionnaire}-{title}', 'SurveyController@store')->name('answerSurvey');
