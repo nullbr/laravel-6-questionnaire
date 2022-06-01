@@ -5,6 +5,8 @@
 
 ## About The Project
 
+[![wakatime](https://wakatime.com/badge/user/9450441a-ff7b-4805-b841-897d35ef3820/project/069b40bd-7733-409b-bdc3-b03dc7369db4.svg)](https://wakatime.com/badge/user/9450441a-ff7b-4805-b841-897d35ef3820/project/069b40bd-7733-409b-bdc3-b03dc7369db4)
+
 Creating a Survey App with the Laravel framework, the final project from Coder's Tape.
 
 This is a simple app, which allows the user to create a questionnaire (has to be logged in) and is able to share a friendly link to others that may want to take answer the questionnaire. 
