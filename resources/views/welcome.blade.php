@@ -90,7 +90,7 @@
                     <a href="/home">Home</a>
                     <a href="/questionnaires/create">Create</a>
                     <a href="/questionnaires">Questionnaires</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://github.com/nullbr/laravel-6-questionnaire">GitHub</a>
                 </div>
             </div>
         </div>
