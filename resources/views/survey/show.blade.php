@@ -13,12 +13,12 @@
 
                 @foreach($questionnaire->questions as $key => $question)
                     <div class="card mt-4">
-                        <div class="card-header"><strong>{{ $key + 1 }} </strong>{{ $question->question }}</div>
+                        <div class="card-header"><strong>{{ $key + 1 }} - </strong>{{ $question->question }}</div>
 
                         <div class="card-body">
 
                             @error('responses.' . $key . '.answer_id')
-                                <small class="text-danger">{{ $message }}</small>
+                                <small class="text-danger">Response is required</small>
                             @enderror
 
                             <ul class="list-group">
@@ -52,8 +52,8 @@
                             <input name="survey[name]" type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Your Name">
                             <small id="nameHelp" class="form-text text-muted">Hello! What's your Email</small>
 
-                            @error('name')
-                            <small class="text-danger">{{ $message }}</small>
+                            @error('survey.name')
+                            <small class="text-danger">Name is required.</small>
                             @enderror
                         </div>
 
@@ -62,8 +62,8 @@
                             <input name="survey[email]" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Your Email">
                             <small id="emailHelp" class="form-text text-muted">Your email Please.</small>
 
-                            @error('email')
-                            <small class="text-danger">{{ $message }}</small>
+                            @error('survey.email')
+                            <small class="text-danger">Email is required.</small>
                             @enderror
                         </div>
 
