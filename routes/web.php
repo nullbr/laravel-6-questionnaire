@@ -27,6 +27,7 @@ Route::get('user/logout', function ()
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/questionnaires', 'QuestionnaireController@index')->name('allQuestionnaires');
 Route::get('/questionnaires/create', 'QuestionnaireController@create')->name('createQuestionnaire');
 Route::post('/questionnaires', 'QuestionnaireController@store')->name('storeQuestionnaire');
 Route::get('/questionnaires/{questionnaire}', 'QuestionnaireController@show')->name('showQuestionnaire');

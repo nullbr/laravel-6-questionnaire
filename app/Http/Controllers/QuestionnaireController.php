@@ -19,7 +19,9 @@ class QuestionnaireController extends Controller
      */
     public function index()
     {
-        //
+        $questionnaires = Questionnaire::all();
+
+        return view('questionnaire.index', compact('questionnaires'));
     }
 
     /**
