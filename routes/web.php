@@ -17,6 +17,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('user/logout', function ()
+{
+    auth()->logout();
+    Session()->flush();
+
+    return Redirect::to('/');
+})->name('logout');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/questionnaires/create', 'QuestionnaireController@create')->name('createQuestionnaire');
