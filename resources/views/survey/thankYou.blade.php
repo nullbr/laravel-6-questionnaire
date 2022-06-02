@@ -9,7 +9,6 @@
 
                     <div class="card-body">
                         Check out all of our questionnaires.
-                        <button class="btn-primary">All Questionnaires.</button>
                         <a href="/questionnaires" class="btn-primary">All Questionnaires.</a>
                     </div>
                 </div>

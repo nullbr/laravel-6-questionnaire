@@ -13,6 +13,10 @@
                                 <li class="list-group-item">
                                     <div>
                                         <h4>{{ $questionnaire->title }}</h4>
+                                    </div>
+
+                                    <div>
+                                        <p>{{ $questionnaire->purpose }}</p>
                                         <small>By {{ $questionnaire->user->name }}</small>
                                     </div>
 
